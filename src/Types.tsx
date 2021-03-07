@@ -7,3 +7,13 @@ export type TransactionType = {
 export type TransactionsArray = {
     transactions: TransactionType[];
 }
+
+export type firebaseConfig = {
+    apiKey: string;
+    authDomain: string;
+    databaseURL: string;
+    projectId: string;
+    storageBucket: string;
+    messagingSenderId: string;
+    appId: string;
+  };

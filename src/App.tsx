@@ -5,10 +5,16 @@ import IncomeExpenses from './IncomeExpenses';
 import TransactionList from './TransactionList';
 import AddTransaction from './AddTransaction';
 import {GlobalProvider} from './context/GlobalState'; 
+//import firebase from './firebase';
+import {configNotification} from './firebase';
 
 import './App.css';
 
 function App() {
+
+configNotification();
+
+
   return (
     <GlobalProvider>
       <Header/>
